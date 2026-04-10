@@ -1,0 +1,12 @@
+# Java
+*.class
+students.txt
+temp.txt
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# OS
+.DS_Store

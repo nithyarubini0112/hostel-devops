@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hostel-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hostel
+  template:
+    metadata:
+      labels:
+        app: hostel
+    spec:
+      containers:
+      - name: hostel-container
+        image: hostel-app
+        imagePullPolicy: Never
